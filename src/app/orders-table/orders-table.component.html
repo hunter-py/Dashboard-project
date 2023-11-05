@@ -1,0 +1,33 @@
+<!-- <table >
+    <thead>
+        <tr>
+            <td>#</td>
+            <td>Customer</td>
+            <td>Products</td>
+            <td>Delivery Date</td>
+            <td>Status</td>
+            <td>Tracking No#</td>
+            <td>Shipping</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let order of orders let index=index">
+            <td>{{index}}</td>
+            <td>{{order.name}}</td>
+            <td>{{order.product}}</td>
+            <td>{{order.delivery_date|date}}</td>
+            <td [class]='order.status'>{{order.status}}</td>
+            <td>{{order.tracking_no}}</td>
+            <td>{{order.shipping|shipping}}</td>
+        </tr>
+    </tbody>
+</table> -->
+
+<ag-grid-angular
+  *ngIf="orders"
+  style="width: 100%; height: 350px"
+  class="ag-theme-alpine"
+  [rowData]="orders"
+  [columnDefs]="columnDefs"
+>
+</ag-grid-angular>

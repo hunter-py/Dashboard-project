@@ -1,0 +1,43 @@
+.main{
+  padding: 15px;
+}
+.top-cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.orders-table {
+  background: white;
+  width: 71%;
+  padding-bottom: 10px;
+  padding: 20px;
+  h4{
+    font-weight: bold;
+    position: relative;
+  }
+}
+.users {
+  background: white;
+  width: 27%;
+  height: 430px;
+  overflow-y: scroll;
+  padding-bottom: 30px;
+  padding: 20px;
+  h4::-webkit-scrollbar{
+    display: none;
+  }
+  h4{
+    font-weight: bold;
+  }
+}
+.users::-webkit-scrollbar {
+  display: none;
+}
+
+.api-data{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}

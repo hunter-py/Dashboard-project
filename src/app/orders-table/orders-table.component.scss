@@ -1,0 +1,31 @@
+table {
+  height: 50px;
+  overflow: hidden !important;
+  tbody {
+    td {
+      padding: 15px;
+    }
+  }
+}
+
+.Paid {
+  background-color: #2ecd72;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.Pending {
+  background-color: #7783a3;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.Failed {
+  background-color: #ec576e;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.ag-theme-alpine {
+  --ag-grid-width: 10px;
+}

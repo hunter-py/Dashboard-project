@@ -1,0 +1,14 @@
+<div *ngIf="users">
+  <div fxlayout="row" *ngFor="let user of users" class="user">
+    <img [src]="'assets/jpg/profile.jpg'" alt="image">
+        <div fxlayout="column">
+      <p class="name">{{ user.name }}</p>
+      <p>{{ user.country }}</p>
+    </div>
+    <div class="progress">
+      <progress [value]="user.progress" max="100"></progress
+      >{{ user.progress }}%
+      <button class="btn btn-primary">More</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="main">
+  <app-card [tabledata]="tableData.top_cards" [icons]="icons"></app-card>
+
+  <div *ngIf="tableData" class="api-data">
+    <div class="orders-table">
+        <h4>Recent Orders</h4>
+      <app-orders-table [orders]="tableData.recent_orders"></app-orders-table>
+    </div>
+    <div class="users">
+        <h4>New User Registrations</h4>
+      <app-users [users]="tableData.new_users"></app-users>
+    </div>
+  </div>
+
+  <app-graphs></app-graphs>
+</div>

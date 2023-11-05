@@ -1,0 +1,9 @@
+<div class="cards">
+    <div *ngFor="let card of tabledata let i=index">
+        <div class="card">
+            <h2>{{card.value}}%</h2><span><i [class]="icons[i]"></i></span>
+            <p class="sub-header">{{card.header}}</p>
+            <p class="description">{{card.sub_header|elipsis:20}}</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+img{
+    border-radius: 50%;
+}
+
+.user{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    border: 1px;
+    border-radius: 10px;
+    
+    .name{
+        font-size: 12px;
+        font-weight: bold;
+    }
+}
+
+.column{
+    padding-top: 5px;
+    padding-right: 2px;
+    min-width: 317px !important;
+}
+
+.progress{
+    height: 100%;
+}
